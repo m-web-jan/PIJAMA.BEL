@@ -19,6 +19,9 @@ time, mark, audio, video {
 	vertical-align: baseline;
     text-decoration: none
 }
+.nav__pan-mob{
+    display: none;
+}
 html{
     scroll-behavior: smooth;
 }
@@ -663,14 +666,6 @@ video {
         margin: 0 auto;
     }
 
-
-
-
-
-
-
-
-
     .burger__menu-img{
         display: block;
         position: absolute;
@@ -697,6 +692,7 @@ video {
         display: none;
     }
     .nav__pan-mob{
+        display: block;
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 300;
