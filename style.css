@@ -1,4 +1,4 @@
-/* VIK */
+/* GITHUB */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -318,7 +318,8 @@ footer h3{
 
 .popup__back{
     width: 100%;
-    height: calc(100vh - 300px);
+    /* height: calc(100vh - 300px); */
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     padding-top: 300px;
     position: fixed;
