@@ -91,13 +91,13 @@ document.body.addEventListener("keydown", function logKey(e) {
             burger.src = 'img/icons/burger.png';
             menu__back.style.display = 'none';
             menu.style.display = 'none';
-            document.body.style.overflowY = 'visible';
+            document.body.style.overflow = 'visible';
         }else {
             burger.src = 'img/icons/close-btn.png';
             burger.classList.add('close');
             menu__back.style.display = 'block';
             menu.style.display = 'block';
-            document.body.style.overflowY = 'hidden';
+            document.body.style.overflow = 'hidden';
         }
     }
     nav.onclick = function(){
@@ -106,7 +106,7 @@ document.body.addEventListener("keydown", function logKey(e) {
             burger.src = 'img/icons/burger.png';
             menu__back.style.display = 'none';
             menu.style.display = 'none';
-            document.body.style.overflowY = 'visible';
+            document.body.style.overflow = 'visible';
         }
     }
 }());

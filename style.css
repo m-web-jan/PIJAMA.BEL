@@ -705,4 +705,7 @@ video {
     .nav__pan-mob li {
         padding-bottom: 25px;
     }
+    .popup__back {
+        padding-top: 200px;
+    }
 }
