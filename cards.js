@@ -37,7 +37,7 @@ document.getElementById('back').style.display = 'none';
                 document.getElementById('time').appendChild(b2);
                 document.getElementById('time').innerHTML += json[q]['time'];
                 document.getElementById('back').style.display = 'block';
-                document.body.style.overflowY = 'hidden';
+                document.body.style.overflow = 'hidden';
             }else{
                 document.getElementById('popupImg').src = json[q]['img-src'];
                 document.getElementById('title').innerText = json[q]['title'];
@@ -49,7 +49,7 @@ document.getElementById('back').style.display = 'none';
                 let closed = document.getElementsByClassName('closed')[0];
                 closed.src = 'img/icons/в разработке.png';
                 document.getElementById('back').style.display = 'block';
-                document.body.style.overflowY = 'hidden';
+                document.body.style.overflow = 'hidden';
             }
         };
         card_btn.innerText = 'подробнее';
@@ -67,14 +67,14 @@ document.getElementById('back').onclick = function(event){
     let el = event.target.id;
     if (el == 'close__btn-img' || el == 'close__btn' || el == 'back') {
         document.getElementById('back').style.display = 'none';
-        document.body.style.overflowY = 'visible';
+        document.body.style.overflow = 'visible';
     }
 }
 
 document.body.addEventListener("keydown", function logKey(e) {
     if (e.code == 'Escape' && document.getElementById('back').style.display == 'block'){
         document.getElementById('back').style.display = 'none';
-        document.body.style.overflowY = 'visible';
+        document.body.style.overflow = 'visible';
     }
 });
 
