@@ -236,14 +236,13 @@ button{
 }
 
 .coach__content{
-    max-width: 1085px;
-    display: flex;
-    padding-top: 35px;
+    max-width: 410px;
+    margin: 0 auto;
 }
 .coach__container{
     max-width: 1280px;
     margin: 0 auto;
-    padding-bottom: 34px;
+    padding-bottom: 50px;
 }
 .line {
     width: 85px;
@@ -253,11 +252,11 @@ button{
 }
 .coach__text{
     max-width: 620px;
-    margin-left: 50px;
-    text-align: center;
+    /* text-align: center; */
+    margin: 0 auto;
 }
 .coach__text h3{
-    padding-top: 93px;
+    padding-top: 50px;
     padding-bottom: 11px;
     font-family: 'Roboto';
     font-style: normal;
@@ -271,16 +270,28 @@ button{
     font-weight: 300;
     font-size: 15px;
 }
-.coach img {
-    margin-left: 150px;
+.coach__img{
+    text-align: center;
+    padding-top: 25px;
+}
+.coach__img h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 44px;
+    color: #474747;
+    text-align: right;
+    padding-top: 10px;
+    padding-right: 59px;
+    padding-bottom: 10px;
 }
 .coach__text p {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 600;
     font-size: 17px;
-    padding-left: 25px;
     padding-top: 20px;
+    text-align: justify;
 }
 footer{
     width: 100%;
