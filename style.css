@@ -252,7 +252,7 @@ button{
 }
 .coach__text{
     max-width: 620px;
-    /* text-align: center; */
+    text-align: center;
     margin: 0 auto;
 }
 .coach__text h3{
@@ -291,7 +291,6 @@ button{
     font-weight: 600;
     font-size: 17px;
     padding-top: 20px;
-    text-align: justify;
 }
 footer{
     width: 100%;
@@ -526,18 +525,17 @@ video {
         height: 350px;
     }
     .popup__content h3 {
-        font-size: 30px;
-        padding-top: 12px;
+        font-size: 25px;
+        padding-top: 0;
     }
     .popup__content p {
-        padding-left: 35px;
-        font-size: 20px;
-        padding-bottom: 10px;
+        font-size: 15px;
+        padding-bottom: 0;
     }
     .popup__content ul {
-        font-size: 20px;
-        padding-bottom: 25px;
-        padding-top: 15px;
+        font-size: 15px;
+        padding-bottom: 0;
+        /* padding-top: 15px; */
     }
     .popup__content button {
         font-size: 20px;
@@ -558,6 +556,15 @@ video {
 }
 
 @media screen and (max-width: 767px) {
+    .popup__content h3 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .popup__content ul {
+        font-size: 20px;
+        padding-top: 10px;
+        padding-bottom: 25px;
+    }
     .programms__cards{
         max-width: 270px;
     }
@@ -620,18 +627,20 @@ video {
         display: none;
     }
     .popup__body {
-        width: 350px;
-        height: 425px;
+        padding-left: 10px;
+        width: 320px;
+        height: auto;
+        padding-bottom: 35px;
     }
     .popup__content p {
         font-size: 20px;
     }
     .popup__content button {
-        padding: 7px 25px;
+        padding: 5px 50px;
         font-size: 20px;
     }
     .close__btn {
-        margin-left: 300px;
+        margin-left: 270px;
         margin-top: -60px;
     }
     .main__text {
@@ -673,7 +682,10 @@ video {
         max-width: 293px;
         margin: 0 auto;
     }
-
+    .coach-img{
+        width: 300px;
+        margin: 0 auto;
+    }
     .burger__menu-img{
         display: block;
         position: absolute;

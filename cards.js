@@ -31,11 +31,16 @@ document.getElementById('back').style.display = 'none';
                 document.getElementById('price').appendChild(b1);
                 document.getElementById('price').innerHTML += json[q]['price'];
                 let b2 = document.createElement('b');
-                b2.innerText = "Доступ: ";
-                b2.style.fontWeight = 600;
-                document.getElementById('time').innerHTML = '';
-                document.getElementById('time').appendChild(b2);
-                document.getElementById('time').innerHTML += json[q]['time'];
+                if (json[q]['time'] != ''){
+                    document.getElementById('time').style.display = 'list-item';
+                    b2.innerText = 'Доступ: ';
+                    b2.style.fontWeight = 600;
+                    document.getElementById('time').innerHTML = '';
+                    document.getElementById('time').appendChild(b2);
+                    document.getElementById('time').innerHTML += json[q]['time'];
+                }else{
+                    document.getElementById('time').style.display = 'none';
+                }
                 document.getElementById('back').style.display = 'block';
                 document.body.style.overflow = 'hidden';
             }else{
