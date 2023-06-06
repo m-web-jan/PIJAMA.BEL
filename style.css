@@ -211,6 +211,7 @@ button{
     font-weight: 400;
     font-size: 20px;
     padding: 17px;
+    max-width: 236px;
 }
 
 .programms__card button {
@@ -347,14 +348,13 @@ footer h3{
     font-weight: 400;
     font-size: 36px;
     color: #474747;
-    padding-top: 62px;
-    padding-bottom: 42px;
+    padding-top: 20px;
 }
 .popup__content p{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 16px;
     padding-bottom: 33px;
     text-align: left;
 }
@@ -366,7 +366,7 @@ footer h3{
     line-height: 30px;
     padding-left: 45px;
     text-align: left;
-    padding-bottom: 50px;
+    padding-bottom: 25px;
 }
 
 .popup__content button {
@@ -517,7 +517,6 @@ video {
     .popup__content h3 {
         font-size: 30px;
         padding-top: 12px;
-        padding-bottom: 0px;
     }
     .popup__content p {
         padding-left: 35px;
