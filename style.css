@@ -20,6 +20,10 @@ time, mark, audio, video {
 	vertical-align: baseline;
     text-decoration: none
 }
+.footer__container h5 a {
+    color: white;
+    text-decoration: underline;
+}
 .nav__pan-mob{
     display: none;
 }
