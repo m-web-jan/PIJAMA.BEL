@@ -302,7 +302,7 @@ footer h3{
 
 .popup__back{
     width: 100%;
-    height: calc(100vh - 300px);
+    height: calc(100vh - 100px);
     /* height: 100%; */
     background-color: rgba(0, 0, 0, 0.5);
     padding-top: 300px;
