@@ -303,10 +303,11 @@ footer{
 }
 
 footer nav{
-    max-width: 510px;
+    max-width: 235px;
     margin: 0 auto;
     padding-top: 36px;
     padding-bottom: 51px;
+    padding-left: 0 !important;
 }
 footer h5{
     padding-top: 19px;
