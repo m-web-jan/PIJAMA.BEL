@@ -6,7 +6,17 @@ document.getElementById('back').style.display = 'none';
     let cards = document.getElementsByClassName('programms__cards')[0];
     
     for (let i = 0; i < json.length; i++){
+        let spisok = document.getElementById('spisok');
+        let spisok_a = document.createElement('a');
+        spisok_a.href = '#id' + json[i]['id'];
+        let spisok_li = document.createElement('li');
+        spisok_li.classList.add('podmenu');
+        spisok_li.innerText = json[i]['title'];
+        spisok_a.appendChild(spisok_li);
+        spisok.appendChild(spisok_a);
+
         let div_card = document.createElement('div');
+        div_card.id = 'id' + json[i]['id'];
         let card_img = document.createElement('img');
         let card_text = document.createElement('h5');
         let card_btn = document.createElement('button');
@@ -66,6 +76,13 @@ document.getElementById('back').style.display = 'none';
         div_card.appendChild(card_btn);
         cards.appendChild(div_card);
     }
+    let spisok = document.getElementById('spisok');
+    let spisok_a = document.createElement('a');
+    spisok_a.href = '#coach';
+    let spisok_li = document.createElement('li');
+    spisok_li.innerText = 'Тренер';
+    spisok_a.appendChild(spisok_li);
+    spisok.appendChild(spisok_a);
 }());
 
 document.getElementById('back').onclick = function(event){
@@ -114,4 +131,13 @@ document.body.addEventListener("keydown", function logKey(e) {
             document.body.style.overflow = 'visible';
         }
     }
+}());
+
+
+
+(async function () {
+    let data = await fetch("main.json");
+    let json = await data.json();
+
+    // json[q]['img-src'];
 }());

@@ -133,42 +133,9 @@ button{
     margin-left: 97px;
 }
 
-.advantages{
-    width: 100%;
-    background-color: #FFFFFF;
-    padding-top: 46px;
-}
-.advantages__container{
-    max-width: 1280px;
-    margin: 0 auto;
-    text-align: center;
-}
-.advantages h3 {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 44px;
-    color: #474747;
-}
 
-.list{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    column-gap: 101px;
-    padding-bottom: 56px;
-}
-.list p {
-    width: 270px;
-    text-align: justify;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-}
-.list img {
-    margin: 20px;
-}
+
+
 .programms{
     width: 100%;
     background-color: #F6F6F6;
@@ -670,9 +637,6 @@ video {
         font-size: 20px;
         padding: 7px 35px;
     }
-    .advantages h3 {
-        font-size: 30px;        
-    }
     .programms h3 {
         font-size: 30px;
     }
@@ -720,15 +684,25 @@ video {
         font-size: 25px;
         list-style: none;
         text-align: center;
-        margin-top: 250px;
+        margin-top: 100px;
     }
     .nav__pan-mob a {
         color: white;
     }
     .nav__pan-mob li {
-        padding-bottom: 25px;
+        padding-top: 25px;
     }
     .popup__back {
         padding-top: 150px;
     }
+
+    
+    .podmenu{
+        font-size: 20px;
+        padding-top: 5px !important;
+        width: 200px;
+        margin: 0 auto;
+        color: rgba(255, 255, 255, 0.3);
+    }
+    
 }
