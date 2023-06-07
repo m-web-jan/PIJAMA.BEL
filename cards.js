@@ -83,6 +83,14 @@ document.getElementById('back').style.display = 'none';
     spisok_li.innerText = 'Тренер';
     spisok_a.appendChild(spisok_li);
     spisok.appendChild(spisok_a);
+
+    spisok = document.getElementById('spisok');
+    spisok_a = document.createElement('a');
+    spisok_a.href = '#FAQ';
+    spisok_li = document.createElement('li');
+    spisok_li.innerText = 'Контакты';
+    spisok_a.appendChild(spisok_li);
+    spisok.appendChild(spisok_a);
 }());
 
 document.getElementById('back').onclick = function(event){
