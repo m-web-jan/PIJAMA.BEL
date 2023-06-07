@@ -308,6 +308,7 @@ footer h3{
     padding-top: 300px;
     position: fixed;
     top: 0;
+    overflow: auto;
 }
 .popup__body{
     width: 900px;
