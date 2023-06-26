@@ -20,7 +20,9 @@ time, mark, audio, video {
 	vertical-align: baseline;
     text-decoration: none
 }
-
+.toner > img {
+    width: 547px;
+}
 .footer__container h5 a {
     color: white;
     text-decoration: underline;
@@ -32,7 +34,7 @@ html{
     scroll-behavior: smooth;
 }
 main{
-    background-color: #474747;
+    background-color: #181414;
     width: 100%;
 }
 .main__wrapper{
@@ -132,12 +134,25 @@ button{
     color: white;
     margin-top: 36px;
     margin-bottom: 36px;
+    max-width: 400px;
 }
 .main__text {
-    margin-top: 107px;
+    margin-top: 200px;
     margin-left: 97px;
 }
-
+.table__size{
+    border-collapse: collapse;
+    font-family: sans-serif;
+    max-width: 1500px;
+}
+.table__size th{
+    border: 1px solid black;
+    font-weight: 600;
+    padding: 7px 15px;
+}
+.table__size td{
+    border: 1px solid black;
+}
 
 
 
@@ -174,7 +189,7 @@ button{
 }
 .programms__card img {
     width: 270px;
-    height: 270px;
+    /* height: 270px; */
 }
 
 .programms__card h5 {
@@ -208,8 +223,8 @@ button{
 }
 
 .coach__content{
-    max-width: 410px;
     margin: 0 auto;
+    max-width: 1000px;
 }
 .coach__container{
     max-width: 1280px;
@@ -223,7 +238,6 @@ button{
     margin: 0 auto;
 }
 .coach__text{
-    max-width: 620px;
     text-align: center;
     margin: 0 auto;
 }
@@ -234,13 +248,20 @@ button{
     font-style: normal;
     font-weight: 600;
     font-size: 44px;
+    margin: 0 auto;
+    width: 250px;
+}
+.tables{
+    display: flex;
+    /* width: 800px; */
+    justify-content: space-between;
 }
 .coach__text h5{
     padding-bottom: 16px;
     font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 15px;
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: 35px;
 }
 .coach__img{
     text-align: center;
@@ -266,7 +287,7 @@ button{
 }
 footer{
     width: 100%;
-    background-color: #474747;
+    background-color: #181414;
 }
 .footer__container{
     margin: 0 auto;
@@ -300,7 +321,6 @@ footer h3{
 .popup__back{
     width: 100%;
     height: calc(100vh - 100px);
-    /* height: 100%; */
     background-color: rgba(0, 0, 0, 0.5);
     padding-top: 100px;
     position: fixed;
@@ -315,8 +335,7 @@ footer h3{
     display: flex;
 }
 .popup__body > img{
-    width: 500px;
-    height: 500px;
+    width: 350px;
 }
 .popup__content{
     width: 345px;
@@ -338,6 +357,7 @@ footer h3{
     font-size: 16px;
     padding-bottom: 33px;
     text-align: left;
+    padding-top: 50px;
 }
 .popup__content ul{
     font-family: 'Roboto';
@@ -456,7 +476,7 @@ video {
         display: none;
     }
     .main__wrapper{
-        background: no-repeat url(img/Без\ имени-1.jpg);
+        background: no-repeat url(img/main-back.jpg);
         background-size: cover;
         height: 1012px;
         

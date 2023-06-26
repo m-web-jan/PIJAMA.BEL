@@ -34,22 +34,31 @@ document.getElementById('back').style.display = 'none';
                 document.getElementById('popupImg').src = json[q]['img-src'];
                 document.getElementById('title').innerText = json[q]['title'];
                 document.getElementById('description').innerText = json[q]['des'];
+
+                let b3 = document.createElement('b');
+                b3.innerText = "Цвета: ";
+                b3.style.fontWeight = 600;
+                document.getElementById('color').innerHTML = '';
+                document.getElementById('color').appendChild(b3);
+                document.getElementById('color').innerHTML += json[q]['colors'];
+
                 let b1 = document.createElement('b');
                 b1.innerText = "Стоимость: ";
                 b1.style.fontWeight = 600;
                 document.getElementById('price').innerHTML = '';
                 document.getElementById('price').appendChild(b1);
                 document.getElementById('price').innerHTML += json[q]['price'];
+
                 let b2 = document.createElement('b');
-                if (json[q]['time'] != ''){
-                    document.getElementById('time').style.display = 'list-item';
-                    b2.innerText = 'Доступ: ';
+                if (json[q]['size'] != ''){
+                    document.getElementById('size').style.display = 'list-item';
+                    b2.innerText = 'Размер: ';
                     b2.style.fontWeight = 600;
-                    document.getElementById('time').innerHTML = '';
-                    document.getElementById('time').appendChild(b2);
-                    document.getElementById('time').innerHTML += json[q]['time'];
+                    document.getElementById('size').innerHTML = '';
+                    document.getElementById('size').appendChild(b2);
+                    document.getElementById('size').innerHTML += json[q]['size'];
                 }else{
-                    document.getElementById('time').style.display = 'none';
+                    document.getElementById('size').style.display = 'none';
                 }
                 document.getElementById('back').style.display = 'block';
                 document.body.style.overflow = 'hidden';
