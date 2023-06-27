@@ -276,28 +276,8 @@ button{
     margin-top: 35px;
     color: white;
 }
-.coach__img{
-    text-align: center;
-    padding-top: 25px;
-}
-.coach__img h3 {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 44px;
-    color: #474747;
-    text-align: right;
-    padding-top: 10px;
-    padding-right: 59px;
-    padding-bottom: 10px;
-}
-.coach__text p {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 17px;
-    padding-top: 20px;
-}
+
+
 footer{
     width: 100%;
     background-color: #181414;
