@@ -87,9 +87,9 @@ document.getElementById('back').style.display = 'none';
     }
     let spisok = document.getElementById('spisok');
     let spisok_a = document.createElement('a');
-    spisok_a.href = '#coach';
+    spisok_a.href = '#sizes';
     let spisok_li = document.createElement('li');
-    spisok_li.innerText = 'Тренер';
+    spisok_li.innerText = 'Размеры';
     spisok_a.appendChild(spisok_li);
     spisok.appendChild(spisok_a);
 
