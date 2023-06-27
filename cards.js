@@ -151,8 +151,3 @@ document.body.addEventListener("keydown", function logKey(e) {
 }());
 
 
-
-(async function () {
-    let data = await fetch("main.json");
-    let json = await data.json();
-}());
